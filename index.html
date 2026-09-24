@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Sexy Drill Beats | Yombol Music – Melodic & Hard Instrumentals</title>
-    <meta name="description" content="Elevate your sound with the best Sexy Drill beats. Melodic vibes with hard-hitting drums. Prices from $5, instant delivery. Buy exclusive Sexy Drill instrumentals!">
-    <meta name="keywords" content="Sexy Drill, melodic drill, Cash Cobain type beat, Chow Lee type beat, sexy drill instrumentals, Yombol Music, Beatstars, exclusive beats">
+    <title>Trap Beats | Yombol Music – Hard & Melodic Instrumentals</title>
+    <meta name="description" content="Buy professional Trap, Hard Trap & Melodic beats. Get full control with WAV + Individual Track Stems for pro mixing. Premium & Unlimited licenses inside.">
+    <meta name="keywords" content="Buy Beats, Trap Beats, Hard Trap, Hoodtrap, Music Production, Yombol Music, Exclusive Beats">
     <meta name="author" content="Yombol Music">
-    <link rel="canonical" href="https://SexyDrill.YombolMusic.com">
-
+    <meta name="theme-color" content="#d40000">
+    
+    <link rel="canonical" href="https://Trap.YombolMusic.com">
     <link rel="icon" href="images/favicon.png" type="image/png">
 
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -24,16 +26,20 @@
     fbq('init', '1408373406987633');
     fbq('track', 'PageView');
     </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1408373406987633&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <style>
         :root {
-            --bg-dark: #050000;
             --sexy-red: #d40000;
+            --neon-red: #ff003c;
+            --dark-red: #8b0000;
             --gold: #d4af37;
-            --text-light: #f5f5f5;
+            --bg-dark: #050000;
+            --text-light: #ffffff;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -46,142 +52,265 @@
             line-height: 1.6;
         }
 
+        /* --- BACKGROUND CON EMOTICONES GIGANTES FLOTANTES --- */
         .bg-wrapper {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1; background: radial-gradient(circle at 50% 50%, #1a0000 0%, #050000 100%);
+            z-index: -1;
+            background: radial-gradient(circle at 50% 50%, #150000 0%, #030000 100%);
+            overflow: hidden;
+        }
+
+        .floating-emoji {
+            position: absolute;
+            font-size: 25rem; /* Tamaño gigante */
+            opacity: 0.04; /* Muy sutil para no distraer */
+            filter: blur(8px); /* Desenfoque para integrar con el fondo */
+            animation: floatEmoji 25s infinite alternate ease-in-out;
+            user-select: none;
+        }
+
+        .emoji-1 { top: -5%; left: -5%; animation-duration: 22s; }
+        .emoji-2 { bottom: 0%; right: -10%; font-size: 35rem; animation-duration: 28s; animation-delay: -5s; }
+        .emoji-3 { top: 40%; left: 35%; font-size: 20rem; animation-duration: 35s; animation-delay: -10s; }
+
+        @keyframes floatEmoji {
+            0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+            100% { transform: translate(15%, 15%) scale(1.2) rotate(20deg); }
         }
 
         .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+        
+        section { padding: 40px 0; }
 
-        section { padding: 25px 0; }
-
-        /* --- BANNER (AJUSTE DE MÁRGENES) --- */
+        /* --- BANNER CON BORDES Y SOMBRA TIPO HOODTRAP --- */
         .banner {
             width: 100%;
-            max-width: 1200px;
-            margin: 20px auto 20px auto; 
-            border-radius: 15px;
+            margin: 20px auto; 
+            border-radius: 8px;
             overflow: hidden;
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            line-height: 0; /* Elimina espacio extra debajo de la imagen */
-            box-shadow: 0 0 30px rgba(212, 0, 0, 0.2);
+            border: 3px solid var(--sexy-red);
+            box-shadow: 0 0 60px rgba(212, 0, 0, 0.6), inset 0 0 25px rgba(212, 0, 0, 0.4);
+            line-height: 0;
+            position: relative;
         }
 
-        .banner img { width: 100%; height: auto; display: block; }
+        .banner img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            object-fit: cover; 
+            object-position: center;
+        }
 
-        /* --- REPRODUCTOR (AJUSTE DE CALCE) --- */
+        /* --- REPRODUCTOR CON BORDES Y SOMBRA --- */
         .player-container {
             width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
             background: #000;
-            border-radius: 15px;
-            border: 1px solid rgba(212, 0, 0, 0.2);
+            border-radius: 8px;
+            border: 3px solid var(--neon-red);
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
-            line-height: 0; /* Asegura que el iframe calce perfecto */
+            box-shadow: 0 0 70px rgba(255, 0, 60, 0.5);
+            margin-bottom: 40px; 
+            line-height: 0;
         }
 
         .player-container iframe { display: block; border: none; }
 
         .section-title {
-            text-align: center; margin-bottom: 40px; font-size: 2.5rem; font-weight: 800;
-            text-transform: uppercase; color: #fff; text-shadow: 0 0 15px var(--sexy-red);
+            text-align: center; 
+            margin-bottom: 40px; 
+            font-size: 2.8rem; 
+            font-weight: 900;
+            text-transform: uppercase; 
+            letter-spacing: 4px; 
+            color: #fff;
+            text-shadow: 0 0 15px var(--sexy-red); 
         }
 
-        /* --- LICENSING --- */
-        .pricing-table { display: flex; flex-direction: column; gap: 20px; }
+        /* --- LICENSING (ESTILO YOMBOL MUSIC CON COLORES TRAP) --- */
+        .pricing-table { display: flex; flex-direction: column; gap: 15px; }
+
         .price-row {
-            background: rgba(15, 0, 0, 0.8); border: 1px solid rgba(212, 175, 55, 0.15);
-            border-radius: 12px; padding: 25px 40px; display: grid;
-            grid-template-columns: 2fr 3fr 1fr; align-items: center; transition: 0.4s;
+            background: rgba(15, 0, 0, 0.85); 
+            border-left: 5px solid;
+            padding: 30px 40px; 
+            display: grid; 
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center; 
+            transition: 0.4s; 
+            border-radius: 4px;
+            backdrop-filter: blur(15px);
+            position: relative;
         }
-        .price-row:hover { background: rgba(40, 0, 0, 0.9); border-color: var(--gold); transform: scale(1.02); }
-        .license-name span { display: block; font-size: 1.8rem; color: var(--sexy-red); }
-        .license-details { border-left: 1px solid rgba(212, 175, 55, 0.2); padding-left: 30px; color: #bbb; }
-        .license-details strong { color: var(--gold); display: block; }
-        .price-tag { font-size: 2.2rem; font-weight: 800; text-align: right; color: var(--gold); }
 
-        /* --- CONTACT --- */
-        .contact-section { text-align: center; padding: 30px 0; }
-        .social-icons { display: flex; justify-content: center; gap: 40px; margin-bottom: 35px; }
-        .social-icons a { color: var(--text-light); font-size: 2.5rem; transition: 0.3s; }
-        .social-icons a:hover { color: var(--sexy-red); transform: translateY(-5px); }
+        .price-row:nth-child(1) { border-left-color: var(--dark-red); }
+        .price-row:nth-child(2) { border-left-color: var(--sexy-red); }
+        .price-row:nth-child(3) { border-left-color: var(--neon-red); }
+        .price-row:nth-child(4) { border-left-color: var(--gold); }
+
+        .price-row:hover {
+            transform: translateX(10px);
+            background: rgba(30, 0, 0, 1);
+            box-shadow: 0 0 40px rgba(212, 0, 0, 0.3);
+        }
+
+        .license-name { font-size: 1.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: var(--neon-red); }
+        .license-name span { color: #f5baba; font-size: 0.9rem; display: block; font-weight: 600; margin-top: 5px; opacity: 0.8; }
+
+        .license-details { color: #ddd; font-size: 0.95rem; padding: 0 30px; border-left: 1px solid rgba(255,255,255,0.1); }
+        .license-details strong { color: #fff; display: block; margin-bottom: 5px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        .price-tag { font-size: 2.6rem; font-weight: 900; text-align: right; color: #fff; text-shadow: 0 0 15px rgba(255, 0, 60, 0.5); }
+        .price-tag.offer { font-size: 1.8rem; line-height: 1.2; text-shadow: 0 0 10px rgba(212, 175, 55, 0.6); color: var(--gold); }
+
+        .instant-delivery {
+            text-align: center; margin-top: 30px; color: var(--neon-red);
+            letter-spacing: 4px; font-size: 0.85rem; text-transform: uppercase; font-weight: 800;
+            text-shadow: 0 0 10px rgba(255, 0, 60, 0.5);
+        }
+
+        /* --- CONTACT SECTION --- */
+        .contact-section { text-align: center; padding: 50px 0; }
+
+        .social-icons { display: flex; justify-content: center; align-items: center; gap: 50px; margin-bottom: 40px; }
+        
+        .social-icons a { 
+            color: #fff; 
+            font-size: 2.8rem; 
+            transition: 0.3s; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            text-decoration: none !important;
+        }
+        .social-icons a:hover { color: var(--sexy-red); transform: scale(1.15); filter: drop-shadow(0 0 20px rgba(212, 0, 0, 0.7)); }
+        
+        .beatstars-b { 
+            font-family: 'Arial Black', Impact, sans-serif; 
+            font-style: normal; 
+            font-size: 3rem; 
+            line-height: 1; 
+        }
+
         .whatsapp-btn {
-            display: inline-block; padding: 18px 35px; border: 2px solid var(--sexy-red);
-            color: #fff; text-decoration: none; font-weight: 600; text-transform: uppercase; transition: 0.3s;
+            display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+            padding: 20px 50px;
+            background: linear-gradient(90deg, var(--dark-red), var(--sexy-red));
+            color: #fff; text-decoration: none !important;
+            font-weight: 800; font-size: 1.1rem; text-transform: uppercase; 
+            border-radius: 12px; 
+            transition: 0.3s;
+            letter-spacing: 1px;
+            box-shadow: 0 0 20px rgba(212, 0, 0, 0.4);
+            border: 1px solid var(--neon-red);
         }
-        .whatsapp-btn:hover { background: var(--sexy-red); box-shadow: 0 0 30px rgba(212, 0, 0, 0.5); }
 
-        /* --- FOOTER CON HOVER --- */
-        footer { padding: 40px 0; text-align: center; border-top: 1px solid rgba(212, 175, 55, 0.1); font-size: 0.85rem; color: #666; }
-        footer p a { color: inherit; text-decoration: none; transition: color 0.3s; }
-        footer p a:hover { color: var(--gold); }
-        .footer-links a { color: #888; text-decoration: none; margin: 0 10px; transition: color 0.3s; }
-        .footer-links a:hover { color: var(--gold); }
+        .whatsapp-btn i { font-size: 1.8rem; }
+        .whatsapp-btn:hover { 
+            transform: scale(1.05); 
+            box-shadow: 0 0 40px rgba(255, 0, 60, 0.7); 
+            color: #fff;
+        }
 
+        /* --- FOOTER --- */
+        footer { text-align: center; padding: 60px 0; border-top: 1px solid rgba(212,0,0,0.15); font-size: 0.8rem; color: #888; margin-top: 20px; }
+        footer p { margin-bottom: 15px; }
+        .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .footer-links a { color: #aaa; text-decoration: none; transition: 0.3s; font-weight: 600; }
+        .footer-links a:hover { color: var(--neon-red); text-shadow: 0 0 10px rgba(255, 0, 60, 0.5); }
+
+        /* ========================================= */
+        /* RESPONSIVE DESIGN                         */
+        /* ========================================= */
         @media (max-width: 900px) {
-            .price-row { grid-template-columns: 1fr; text-align: center; padding: 30px; }
-            .license-details { border-left: none; padding-left: 0; }
+            .banner img { height: auto; }
+            
+            .price-row { grid-template-columns: 1fr; text-align: center; gap: 15px; padding: 30px; border-left: none; border-top: 5px solid; }
+            .price-row:nth-child(1) { border-top-color: var(--dark-red); }
+            .price-row:nth-child(2) { border-top-color: var(--sexy-red); }
+            .price-row:nth-child(3) { border-top-color: var(--neon-red); }
+            .price-row:nth-child(4) { border-top-color: var(--gold); }
             .price-tag { text-align: center; }
+            .license-details { border-left: none; padding: 10px 0; }
+            
+            .section-title { font-size: 2.2rem; }
+            .whatsapp-btn { padding: 18px 30px; font-size: 1rem; width: 100%; max-width: 350px; }
         }
     </style>
 </head>
 <body>
 
-    <div class="bg-wrapper"></div>
+    <!-- Animated Emoji Background -->
+    <div class="bg-wrapper">
+        <div class="floating-emoji emoji-1">🔥</div>
+        <div class="floating-emoji emoji-2">😈</div>
+        <div class="floating-emoji emoji-3">🩸</div>
+    </div>
 
     <div class="container">
         
+        <!-- Top Banner -->
         <header class="banner">
-            <img src="images/Banner-(Sexy-Drill).jpg" alt="Sexy Drill Melodic Banner">
+            <img src="images/Banner-(Sexy-Drill).jpg" alt="Yombol Music Trap Beats Banner">
         </header>
 
-        <section style="padding-top: 0;">
-            <div class="player-container">
-                <iframe src="https://player.beatstars.com/?storeId=142229" width="100%" height="800" frameborder="0"></iframe>
-            </div>
-        </section>
+        <!-- Beatstars Player -->
+        <div class="player-container">
+            <iframe src="https://player.beatstars.com/?storeId=152994" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+        </div>
 
+        <!-- Licensing Section -->
         <section id="licensing">
             <h2 class="section-title">Licensing Options</h2>
+            
             <div class="pricing-table">
+                <!-- Standard -->
                 <div class="price-row">
-                    <div class="license-name">Basic <span>MP3</span></div>
-                    <div class="license-details"><strong>Melodic Standard</strong>High-quality MP3 • Monetization Available</div>
-                    <div class="price-tag">$5</div>
+                    <div class="license-name">Standard<span>High-Quality MP3 + WAV</span></div>
+                    <div class="license-details"><strong>Independent Artists</strong>Commercial Monetization • 100% Royalty-Free • Perfect for Streaming & Social Media</div>
+                    <div class="price-tag">$34.90</div>
                 </div>
+                <!-- Premium -->
                 <div class="price-row">
-                    <div class="license-name">Premium <span>WAV</span></div>
-                    <div class="license-details"><strong>Studio Quality</strong>Professional WAV File • Streaming Ready</div>
-                    <div class="price-tag">$10</div>
+                    <div class="license-name">Premium<span>MP3 + WAV + Track Stems</span></div>
+                    <div class="license-details"><strong>Studio Quality</strong>Individual Tracklines (Stems) • Ideal for Official Releases • Optimized for Pro Mixing</div>
+                    <div class="price-tag">$59.90</div>
                 </div>
+                <!-- Unlimited -->
                 <div class="price-row">
-                    <div class="license-name">Stems <span>Trackout</span></div>
-                    <div class="license-details"><strong>Full Control</strong>WAV + Individual Track Stems</div>
-                    <div class="price-tag">$20</div>
+                    <div class="license-name">Unlimited<span>MP3 + WAV + Track Stems</span></div>
+                    <div class="license-details"><strong>Full Control</strong>Unlimited Streams & Sales • Profit-Share Included • Best Value for Major Distribution</div>
+                    <div class="price-tag">$149.90</div>
                 </div>
+                <!-- Exclusive -->
                 <div class="price-row">
-                    <div class="license-name">Exclusive <span>Ownership</span></div>
-                    <div class="license-details"><strong>Total Rights</strong>Full Ownership • Beat removed from store</div>
-                    <div class="price-tag">$40</div>
+                    <div class="license-name">Exclusive<span>All Formats + Contract</span></div>
+                    <div class="license-details"><strong>Total Ownership</strong>100% Full Rights • Beat Removed from Store • PDF Contract Included</div>
+                    <div class="price-tag offer">Make<br>an Offer</div>
                 </div>
             </div>
+
+            <p class="instant-delivery">Street energy. Cyber precision. Instant delivery.</p>
         </section>
 
+        <!-- Contact Section -->
         <section class="contact-section">
-            <h2 class="section-title">Follow & Contact</h2>
+            <h2 class="section-title">Get In Touch</h2>
             <div class="social-icons">
-                <a href="https://instagram.com/YombolMusic" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://youtube.com/@YombolMusic" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.beatstars.com/yombolmusic/tracks" target="_blank"><i class="fas fa-music"></i></a>
+                <a href="https://instagram.com/YombolMusic" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@YombolMusic" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.beatstars.com/yombolmusic/tracks" target="_blank" aria-label="Beatstars"><span class="beatstars-b">B</span></a>
             </div>
-            <a href="https://wa.me/573194018839" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp – Instant reply</a>
+            
+            <a href="https://wa.me/573194018839?text=Hello,%20I'd%20like%20more%20information%20about%20Yombol%20Music%20beats..." class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp – Let's Work
+            </a>
         </section>
 
+        <!-- Footer -->
         <footer>
-            <p>© 2026 <a href="https://yombolmusic.com/en/index.html">Yombol Music</a>. All Rights Reserved.</p>
+            <p>© 2026 Yombol Music. All Rights Reserved.</p>
             <div class="footer-links">
                 <a href="https://yombolmusic.com/en/privacy-policy.html">Privacy Policy</a> • 
                 <a href="https://yombolmusic.com/en/cookies.html">Cookies Policy</a> • 
@@ -189,5 +318,6 @@
             </div>
         </footer>
     </div>
+    
 </body>
 </html>
