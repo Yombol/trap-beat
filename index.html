@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Blazing 808s | Hard Trap Beats | High Quality Instrumentals</title>
-    <meta name="description" content="Buy high quality freestyle trap & hard trap beats. Premium WAV + Stems available. Perfect for rappers, singers & producers. Instant delivery. Lease & Exclusive options.">
-    <meta name="keywords" content="hard trap beats, freestyle trap beats, trap beats for sale, high quality instrumentals, club banger beats, aggressive trap, WAV stems, lease beats, exclusive beats">
-    <meta name="author" content="Blazing 808s">
-    <meta name="theme-color" content="#d40000">
+    <title>Night Circuit | Melodic Trap Beats | High Quality Instrumentals</title>
+    <meta name="description" content="Buy high quality melodic trap & dark melodic beats. Premium WAV + Stems available. Perfect for rappers, singers & producers. Instant delivery. Lease & Exclusive options.">
+    <meta name="keywords" content="melodic trap beats, dark melodic beats, melodic type beat, pain melodic beats, high quality instrumentals, WAV stems, lease beats, exclusive beats">
+    <meta name="author" content="Night Circuit">
+    <meta name="theme-color" content="#a200ff">
     <meta name="robots" content="index, follow">
     
-    <link rel="canonical" href="https://trap.yombolmusic.com">
+    <link rel="canonical" href="https://melodic.yombolmusic.com">
     <link rel="icon" href="images/favicon.png" type="image/png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://trap.yombolmusic.com">
-    <meta property="og:title" content="Blazing 808s | Hard Trap Beats | High Quality Instrumentals">
-    <meta property="og:description" content="Buy high quality freestyle trap & hard trap beats. Premium WAV + Stems available. Perfect for rappers, singers & producers. Instant delivery.">
-    <meta property="og:image" content="https://trap.yombolmusic.com/images/Banner-(Sexy-Drill).jpg">
-    <meta property="og:site_name" content="Blazing 808s">
+    <meta property="og:url" content="https://melodic.yombolmusic.com">
+    <meta property="og:title" content="Night Circuit | Melodic Trap Beats | High Quality Instrumentals">
+    <meta property="og:description" content="Buy high quality melodic trap & dark melodic beats. Premium WAV + Stems available. Perfect for rappers, singers & producers. Instant delivery.">
+    <meta property="og:image" content="https://melodic.yombolmusic.com/images/Banner-(Melodic).jpg">
+    <meta property="og:site_name" content="Night Circuit">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://trap.yombolmusic.com">
-    <meta name="twitter:title" content="Blazing 808s | Hard Trap Beats | High Quality Instrumentals">
-    <meta name="twitter:description" content="Buy high quality freestyle trap & hard trap beats. Premium WAV + Stems available. Perfect for rappers, singers & producers. Instant delivery.">
-    <meta name="twitter:image" content="https://trap.yombolmusic.com/images/Banner-(Sexy-Drill).jpg">
+    <meta name="twitter:url" content="https://melodic.yombolmusic.com">
+    <meta name="twitter:title" content="Night Circuit | Melodic Trap Beats | High Quality Instrumentals">
+    <meta name="twitter:description" content="Buy high quality melodic trap & dark melodic beats. Premium WAV + Stems available. Perfect for rappers, singers & producers. Instant delivery.">
+    <meta name="twitter:image" content="https://melodic.yombolmusic.com/images/Banner-(Melodic).jpg">
 
     <!-- Meta Pixel Code -->
     <script>
@@ -50,11 +50,15 @@
     
     <style>
         :root {
-            --sexy-red: #d40000;
-            --neon-red: #ff003c;
-            --dark-red: #8b0000;
-            --gold: #d4af37;
-            --bg-dark: #050000;
+            /* Paleta Futuristic Night & Sensual */
+            --neon-purple: #a200ff;
+            --neon-magenta: #e6007e;
+            --deep-violet: #5900ff;
+            --bright-magenta: #ff00a0;
+            --bg-center: #1a0033;
+            --bg-edge: #0a0014;
+            --table-bg: rgba(25, 8, 40, 0.85); 
+            --table-hover: rgba(45, 12, 70, 0.95);
             --text-light: #ffffff;
         }
 
@@ -62,53 +66,98 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-dark);
+            background-color: var(--bg-edge);
             color: var(--text-light);
             overflow-x: hidden;
             line-height: 1.6;
         }
 
-        /* --- BACKGROUND CON EMOTICONES GIGANTES FLOTANTES --- */
+        /* --- BACKGROUND Y BATTLE OF THE SEXES --- */
         .bg-wrapper {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             z-index: -1;
-            background: radial-gradient(circle at 50% 50%, #150000 0%, #030000 100%);
+            background: radial-gradient(circle at 50% 50%, var(--bg-center) 0%, var(--bg-edge) 100%);
             overflow: hidden;
         }
 
-        .floating-emoji {
+        .ambient-light {
             position: absolute;
-            font-size: 25rem;
-            opacity: 0.04;
-            filter: blur(8px);
-            animation: floatEmoji 25s infinite alternate ease-in-out;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.35;
+            animation: pulseLight 20s infinite alternate ease-in-out;
+        }
+        .light-1 { width: 400px; height: 400px; background: var(--neon-purple); top: -10%; left: -5%; }
+        .light-2 { width: 500px; height: 500px; background: var(--neon-magenta); bottom: -15%; right: -10%; animation-delay: -5s; }
+        .light-3 { width: 300px; height: 300px; background: var(--deep-violet); top: 40%; left: 40%; animation-delay: -10s; }
+
+        @keyframes pulseLight {
+            0% { transform: scale(1) translate(0, 0); opacity: 0.2; }
+            100% { transform: scale(1.3) translate(50px, -50px); opacity: 0.45; }
+        }
+
+        .floating-symbol {
+            position: absolute;
+            opacity: 0.28; 
+            filter: blur(1px); 
             user-select: none;
+            font-weight: 300;
+            transition: transform 0.2s ease-out;
         }
 
-        .emoji-1 { top: -5%; left: -5%; animation-duration: 22s; }
-        .emoji-2 { bottom: 0%; right: -10%; font-size: 35rem; animation-duration: 28s; animation-delay: -5s; }
-        .emoji-3 { top: 40%; left: 35%; font-size: 20rem; animation-duration: 35s; animation-delay: -10s; }
+        /* LADO IZQUIERDO: Símbolos Femeninos (♀) */
+        .sym-left {
+            animation: floatLeftSensual 28s infinite alternate ease-in-out;
+        }
+        .sym-1  { top: 8%;   left: 2%;  font-size: 3.2rem; color: var(--bright-magenta); text-shadow: 0 0 15px var(--bright-magenta); animation-duration: 22s; }
+        .sym-2  { top: 28%;  left: 5%;  font-size: 2.8rem; color: var(--neon-magenta);   text-shadow: 0 0 12px var(--neon-magenta);   animation-duration: 26s; animation-delay: -4s; }
+        .sym-3  { top: 48%;  left: 1%;  font-size: 3.8rem; color: var(--bright-magenta); text-shadow: 0 0 18px var(--bright-magenta); animation-duration: 20s; animation-delay: -8s; }
+        .sym-4  { top: 68%;  left: 4%;  font-size: 3.0rem; color: var(--neon-magenta);   text-shadow: 0 0 14px var(--neon-magenta);   animation-duration: 25s; animation-delay: -12s; }
+        .sym-5  { top: 88%;  left: 2%;  font-size: 3.5rem; color: var(--bright-magenta); text-shadow: 0 0 16px var(--bright-magenta); animation-duration: 23s; animation-delay: -16s; }
 
-        @keyframes floatEmoji {
-            0% { transform: translate(0, 0) scale(1) rotate(0deg); }
-            100% { transform: translate(15%, 15%) scale(1.2) rotate(20deg); }
+        /* LADO DERECHO: Símbolos Masculinos (♂) */
+        .sym-right {
+            animation: floatRightSensual 28s infinite alternate ease-in-out;
+        }
+        .sym-6  { top: 12%;  right: 3%; font-size: 3.4rem; color: var(--deep-violet);    text-shadow: 0 0 15px var(--deep-violet);    animation-duration: 24s; }
+        .sym-7  { top: 32%;  right: 1%; font-size: 2.6rem; color: var(--neon-purple);    text-shadow: 0 0 12px var(--neon-purple);    animation-duration: 21s; animation-delay: -5s; }
+        .sym-8  { top: 52%;  right: 4%; font-size: 3.6rem; color: var(--deep-violet);    text-shadow: 0 0 18px var(--deep-violet);    animation-duration: 27s; animation-delay: -10s; }
+        .sym-9  { top: 72%;  right: 2%; font-size: 3.0rem; color: var(--neon-purple);    text-shadow: 0 0 14px var(--neon-purple);    animation-duration: 22s; animation-delay: -15s; }
+        .sym-10 { top: 90%;  right: 5%; font-size: 3.2rem; color: var(--deep-violet);    text-shadow: 0 0 15px var(--deep-violet);    animation-duration: 25s; animation-delay: -20s; }
+
+        @keyframes floatLeftSensual {
+            0%   { transform: translateY(0px) rotate(0deg) scale(1); }
+            50%  { transform: translateY(-25px) translateX(12px) rotate(12deg) scale(1.08); }
+            100% { transform: translateY(30px) translateX(-8px) rotate(-8deg) scale(0.95); }
         }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+        @keyframes floatRightSensual {
+            0%   { transform: translateY(0px) rotate(0deg) scale(1); }
+            50%  { transform: translateY(30px) translateX(-12px) rotate(-12deg) scale(1.08); }
+            100% { transform: translateY(-25px) translateX(8px) rotate(8deg) scale(0.95); }
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; position: relative; z-index: 1; }
         
         section { padding: 40px 0; }
 
-        /* --- BANNER CON BORDES Y SOMBRA TIPO HOODTRAP --- */
-        .banner {
+        /* --- BANNER --- */
+        .banner-wrapper {
             width: 100%;
             margin: 20px auto; 
+            border-radius: 12px;
+            padding: 4px;
+            background: linear-gradient(45deg, var(--deep-violet), var(--neon-magenta), var(--neon-purple));
+            box-shadow: 0 0 50px rgba(162, 0, 255, 0.4);
+            animation: gradientShift 8s infinite alternate;
+        }
+
+        .banner {
             border-radius: 8px;
             overflow: hidden;
-            border: 3px solid var(--sexy-red);
-            box-shadow: 0 0 60px rgba(212, 0, 0, 0.6), inset 0 0 25px rgba(212, 0, 0, 0.4);
             line-height: 0;
-            position: relative;
+            background: #000;
         }
 
         .banner img { 
@@ -119,19 +168,29 @@
             object-position: center;
         }
 
-        /* --- REPRODUCTOR CON BORDES Y SOMBRA --- */
-        .player-container {
+        /* --- REPRODUCTOR --- */
+        .player-wrapper {
             width: 100%;
+            margin-bottom: 40px; 
+            border-radius: 12px;
+            padding: 4px;
+            background: linear-gradient(135deg, var(--neon-purple), var(--deep-violet), var(--neon-magenta));
+            box-shadow: 0 0 60px rgba(230, 0, 126, 0.3);
+        }
+
+        .player-container {
             background: #000;
             border-radius: 8px;
-            border: 3px solid var(--neon-red);
             overflow: hidden;
-            box-shadow: 0 0 70px rgba(255, 0, 60, 0.5);
-            margin-bottom: 40px; 
             line-height: 0;
         }
 
-        .player-container iframe { display: block; border: none; }
+        .player-container iframe { display: block; border: none; width: 100%; height: 800px; }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
 
         .section-title {
             text-align: center; 
@@ -141,49 +200,66 @@
             text-transform: uppercase; 
             letter-spacing: 4px; 
             color: #fff;
-            text-shadow: 0 0 15px var(--sexy-red); 
+            text-shadow: 0 0 15px var(--neon-purple); 
         }
 
         /* --- LICENSING --- */
         .pricing-table { display: flex; flex-direction: column; gap: 15px; }
 
         .price-row {
-            background: rgba(15, 0, 0, 0.85); 
-            border-left: 5px solid;
+            background: var(--table-bg); 
             padding: 30px 40px; 
             display: grid; 
             grid-template-columns: 1fr 2fr 1fr;
             align-items: center; 
             transition: 0.4s; 
-            border-radius: 4px;
-            backdrop-filter: blur(15px);
+            border-radius: 8px;
+            backdrop-filter: blur(12px);
             position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.6);
+            border: 1px solid rgba(255,255,255,0.05);
         }
 
-        .price-row:nth-child(1) { border-left-color: var(--dark-red); }
-        .price-row:nth-child(2) { border-left-color: var(--sexy-red); }
-        .price-row:nth-child(3) { border-left-color: var(--neon-red); }
-        .price-row:nth-child(4) { border-left-color: var(--gold); }
+        .price-row::before {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; width: 6px; height: 100%;
+            transition: 0.4s;
+        }
+
+        .price-row:nth-child(1)::before { background: linear-gradient(to bottom, #5900ff, #8a2be2); }
+        .price-row:nth-child(2)::before { background: linear-gradient(to bottom, #a200ff, #c44dff); }
+        .price-row:nth-child(3)::before { background: linear-gradient(to bottom, #e6007e, #ff3399); }
+        .price-row:nth-child(4)::before { background: linear-gradient(to bottom, var(--bright-magenta), var(--neon-purple)); }
 
         .price-row:hover {
             transform: translateX(10px);
-            background: rgba(30, 0, 0, 1);
-            box-shadow: 0 0 40px rgba(212, 0, 0, 0.3);
+            background: var(--table-hover);
+            box-shadow: 0 0 35px rgba(162, 0, 255, 0.25);
+            border-color: rgba(255,255,255,0.1);
         }
 
-        .license-name { font-size: 1.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: var(--neon-red); }
-        .license-name span { color: #f5baba; font-size: 0.9rem; display: block; font-weight: 600; margin-top: 5px; opacity: 0.8; }
+        .price-row:hover::before { width: 8px; }
 
-        .license-details { color: #ddd; font-size: 0.95rem; padding: 0 30px; border-left: 1px solid rgba(255,255,255,0.1); }
+        .license-name { font-size: 1.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: #b366ff; }
+        .price-row:nth-child(1) .license-name { color: #9966ff; }
+        .price-row:nth-child(2) .license-name { color: #d580ff; }
+        .price-row:nth-child(3) .license-name { color: #ff66b2; }
+        .price-row:nth-child(4) .license-name { color: var(--bright-magenta); }
+
+        .license-name span { color: #d9b3ff; font-size: 0.9rem; display: block; font-weight: 600; margin-top: 5px; opacity: 0.8; }
+
+        .license-details { color: #e6e6e6; font-size: 0.95rem; padding: 0 30px; border-left: 1px solid rgba(255,255,255,0.1); }
         .license-details strong { color: #fff; display: block; margin-bottom: 5px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
 
-        .price-tag { font-size: 2.6rem; font-weight: 900; text-align: right; color: #fff; text-shadow: 0 0 15px rgba(255, 0, 60, 0.5); }
-        .price-tag.offer { font-size: 1.8rem; line-height: 1.2; text-shadow: 0 0 10px rgba(212, 175, 55, 0.6); color: var(--gold); }
+        .price-tag { font-size: 2.6rem; font-weight: 900; text-align: right; color: #fff; text-shadow: 0 0 15px rgba(230, 0, 126, 0.4); }
+        .price-tag.offer { font-size: 1.8rem; line-height: 1.2; text-shadow: 0 0 15px rgba(255, 0, 160, 0.6); color: var(--bright-magenta); }
 
         .instant-delivery {
-            text-align: center; margin-top: 30px; color: var(--neon-red);
+            text-align: center; margin-top: 30px; color: var(--neon-purple);
             letter-spacing: 4px; font-size: 0.85rem; text-transform: uppercase; font-weight: 800;
-            text-shadow: 0 0 10px rgba(255, 0, 60, 0.5);
+            text-shadow: 0 0 10px rgba(162, 0, 255, 0.5);
         }
 
         /* --- CONTACT SECTION --- */
@@ -200,7 +276,7 @@
             justify-content: center;
             text-decoration: none !important;
         }
-        .social-icons a:hover { color: var(--sexy-red); transform: scale(1.15); filter: drop-shadow(0 0 20px rgba(212, 0, 0, 0.7)); }
+        .social-icons a:hover { color: var(--neon-magenta); transform: scale(1.15); filter: drop-shadow(0 0 20px rgba(230, 0, 126, 0.7)); }
         
         .beatstars-b { 
             font-family: 'Arial Black', Impact, sans-serif; 
@@ -212,42 +288,48 @@
         .whatsapp-btn {
             display: inline-flex; align-items: center; justify-content: center; gap: 12px;
             padding: 20px 50px;
-            background: linear-gradient(90deg, var(--dark-red), var(--sexy-red));
+            background: linear-gradient(90deg, var(--deep-violet), var(--neon-magenta));
             color: #fff; text-decoration: none !important;
             font-weight: 800; font-size: 1.1rem; text-transform: uppercase; 
             border-radius: 12px; 
             transition: 0.3s;
             letter-spacing: 1px;
-            box-shadow: 0 0 20px rgba(212, 0, 0, 0.4);
-            border: 1px solid var(--neon-red);
+            box-shadow: 0 0 20px rgba(162, 0, 255, 0.4);
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .whatsapp-btn i { font-size: 1.8rem; }
         .whatsapp-btn:hover { 
             transform: scale(1.05); 
-            box-shadow: 0 0 40px rgba(255, 0, 60, 0.7); 
+            box-shadow: 0 0 40px rgba(230, 0, 126, 0.6); 
             color: #fff;
         }
 
-        /* --- FOOTER --- */
-        footer { text-align: center; padding: 60px 0; border-top: 1px solid rgba(212,0,0,0.15); font-size: 0.8rem; color: #888; margin-top: 20px; }
+        /* --- FOOTER AJUSTADO (MORADO/LAVANDA SUTIL) --- */
+        footer { 
+            text-align: center; 
+            padding: 60px 0; 
+            border-top: 1px solid rgba(162, 0, 255, 0.2); 
+            font-size: 0.8rem; 
+            color: #8c73ab; 
+            margin-top: 20px; 
+        }
         footer p { margin-bottom: 15px; }
         .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        .footer-links a { color: #aaa; text-decoration: none; transition: 0.3s; font-weight: 600; }
-        .footer-links a:hover { color: var(--neon-red); text-shadow: 0 0 10px rgba(255, 0, 60, 0.5); }
+        .footer-links a { color: #b099d3; text-decoration: none; transition: 0.3s; font-weight: 600; }
+        .footer-links a:hover { color: var(--neon-magenta); text-shadow: 0 0 10px rgba(230, 0, 126, 0.5); }
 
         /* RESPONSIVE DESIGN */
+        @media (max-width: 1250px) {
+            .floating-symbol { opacity: 0.15; font-size: 2.2rem !important; }
+        }
         @media (max-width: 900px) {
-            .banner img { height: auto; }
-            
-            .price-row { grid-template-columns: 1fr; text-align: center; gap: 15px; padding: 30px; border-left: none; border-top: 5px solid; }
-            .price-row:nth-child(1) { border-top-color: var(--dark-red); }
-            .price-row:nth-child(2) { border-top-color: var(--sexy-red); }
-            .price-row:nth-child(3) { border-top-color: var(--neon-red); }
-            .price-row:nth-child(4) { border-top-color: var(--gold); }
+            .floating-symbol { display: none; }
+            .price-row { grid-template-columns: 1fr; text-align: center; gap: 15px; padding: 30px; }
+            .price-row::before { width: 100%; height: 5px; left: 0; top: 0; }
+            .price-row:hover::before { width: 100%; height: 7px; }
             .price-tag { text-align: center; }
-            .license-details { border-left: none; padding: 10px 0; }
-            
+            .license-details { border-left: none; padding: 10px 0; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 10px; }
             .section-title { font-size: 2.2rem; }
             .whatsapp-btn { padding: 18px 30px; font-size: 1rem; width: 100%; max-width: 350px; }
         }
@@ -255,23 +337,41 @@
 </head>
 <body>
 
-    <!-- Animated Emoji Background -->
+    <!-- Luces Ambientales y Guerra de Sexos en los Bordes -->
     <div class="bg-wrapper">
-        <div class="floating-emoji emoji-1">🔥</div>
-        <div class="floating-emoji emoji-2">😈</div>
-        <div class="floating-emoji emoji-3">🩸</div>
+        <div class="ambient-light light-1"></div>
+        <div class="ambient-light light-2"></div>
+        <div class="ambient-light light-3"></div>
+        
+        <!-- Símbolos Femeninos (Lado Izquierdo) -->
+        <div class="floating-symbol sym-left sym-1">♀</div>
+        <div class="floating-symbol sym-left sym-2">♀</div>
+        <div class="floating-symbol sym-left sym-3">♀</div>
+        <div class="floating-symbol sym-left sym-4">♀</div>
+        <div class="floating-symbol sym-left sym-5">♀</div>
+
+        <!-- Símbolos Masculinos (Lado Derecho) -->
+        <div class="floating-symbol sym-right sym-6">♂</div>
+        <div class="floating-symbol sym-right sym-7">♂</div>
+        <div class="floating-symbol sym-right sym-8">♂</div>
+        <div class="floating-symbol sym-right sym-9">♂</div>
+        <div class="floating-symbol sym-right sym-10">♂</div>
     </div>
 
     <div class="container">
         
-        <!-- Top Banner -->
-        <header class="banner">
-            <img src="images/Banner-(Sexy-Drill).jpg" alt="Yombol Music Trap Beats Banner">
-        </header>
+        <!-- Top Banner with Gradient Wrapper -->
+        <div class="banner-wrapper">
+            <header class="banner">
+                <img src="images/Banner-(Melodic).jpg" alt="Night Circuit Melodic Beats Banner">
+            </header>
+        </div>
 
-        <!-- Beatstars Player -->
-        <div class="player-container">
-            <iframe src="https://player.beatstars.com/?storeId=152994" width="100%" height="800" frameborder="0" scrolling="no"></iframe>
+        <!-- Beatstars Player with Gradient Wrapper -->
+        <div class="player-wrapper">
+            <div class="player-container">
+                <iframe src="https://player.beatstars.com/?storeId=152618" scrolling="no"></iframe>
+            </div>
         </div>
 
         <!-- Licensing Section -->
@@ -317,7 +417,7 @@
                 <a href="https://www.beatstars.com/yombolmusic/tracks" target="_blank" aria-label="Beatstars"><span class="beatstars-b">B</span></a>
             </div>
             
-            <a href="https://wa.me/573194018839?text=Hello,%20I'd%20like%20more%20information%20about%20Yombol%20Music%20beats..." class="whatsapp-btn" target="_blank">
+            <a href="https://wa.me/573194018839?text=Hello,%20I'd%20like%20more%20information%20about%20Melodic%20Trap%20beats..." class="whatsapp-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i> WhatsApp – Let's Work
             </a>
         </section>
@@ -332,6 +432,22 @@
             </div>
         </footer>
     </div>
+
+    <!-- Script para reacción suave al Scroll -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const leftSymbols = document.querySelectorAll('.sym-left');
+            const rightSymbols = document.querySelectorAll('.sym-right');
+            
+            leftSymbols.forEach((sym, i) => {
+                sym.style.transform = `translateY(${scrolled * (0.04 + i * 0.01)}px) rotate(${scrolled * 0.02}deg)`;
+            });
+            rightSymbols.forEach((sym, i) => {
+                sym.style.transform = `translateY(${-scrolled * (0.04 + i * 0.01)}px) rotate(${-scrolled * 0.02}deg)`;
+            });
+        });
+    </script>
     
 </body>
 </html>
